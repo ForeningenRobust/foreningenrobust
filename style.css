@@ -757,6 +757,11 @@ footer {
     display: block;
     padding: 0.75rem 0;
     border-bottom: 1px solid var(--border);
+    color: var(--red);
+  }
+
+  .nav-links li:last-child a {
+    border-bottom: none;
   }
 
 
