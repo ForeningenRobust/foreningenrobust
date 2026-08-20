@@ -653,6 +653,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  gap: 2rem;
 }
 
 .footer-logo img {
@@ -762,9 +763,6 @@ footer {
     border-bottom: 1px solid var(--border);
   }
 
-  .nav-links li:last-child a {
-    border-bottom: none;
-  }
 
   nav.nav-open .nav-links {
     display: flex;
@@ -790,6 +788,11 @@ footer {
 
   .hero-caption {
     padding: 0 3rem;
+  }
+
+  .hero-text {
+    padding-right: 0;
+    padding-top: 1.5rem;
   }
 
   .member-list {
