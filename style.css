@@ -750,7 +750,7 @@ footer {
     flex-direction: column;
     width: 100%;
     gap: 0;
-    padding: 0.5rem 0 1rem;
+    padding: 0.5rem 0;
   }
 
   .nav-links li a {
@@ -758,10 +758,6 @@ footer {
     padding: 0.75rem 0;
     border-bottom: 1px solid var(--border);
     color: var(--red);
-  }
-
-  .nav-links li:last-child a {
-    border-bottom: none;
   }
 
 
