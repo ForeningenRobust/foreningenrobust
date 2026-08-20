@@ -29,6 +29,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 main {
@@ -216,6 +217,7 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem 4rem;
   align-items: center;
+  min-width: 0;
 }
 
 .partner-logo {
@@ -235,7 +237,7 @@ nav {
 .partner-logo-img {
   height: 50px;
   width: auto;
-  max-width: 160px;
+  max-width: 100%;
   object-fit: contain;
   mix-blend-mode: multiply;
   opacity: 0.75;
