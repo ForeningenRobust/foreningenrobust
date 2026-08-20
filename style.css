@@ -765,6 +765,10 @@ footer {
     display: flex;
   }
 
+  nav.nav-open {
+    border-bottom: none;
+  }
+
   .container {
     padding: 0 1.5rem;
   }
