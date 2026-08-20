@@ -13,7 +13,8 @@
     <a class="nav-logo" href="index.html">
       <img src="logo red 1.png" alt="Robust">
     </a>
-    <ul class="nav-links">
+    <button class="nav-burger" aria-label="Meny" onclick="this.closest('nav').classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+    <ul class="nav-links" onclick="this.closest('nav').classList.remove('nav-open')">
       <li><a href="prosjekter.html">Prosjekter</a></li>
       <li><a href="publikasjoner.html" class="active">Publikasjoner</a></li>
       <li><a href="om-oss.html">Om oss</a></li>
@@ -58,11 +59,16 @@
   </main>
 
   <footer>
-    <div class="footer-inner">
+    <div class="footer-inner"><div class="footer-top">
       <div class="footer-logo">
         <img src="logo red 1.png" alt="Robust">
       </div>
-      <span class="footer-copy">© 2025 Foreningen Robust</span>
+      <ul class="footer-links">
+        <li><a href="https://signal.group/#CjQKIJ4SSeZuH4mq6cdh6GIRqtKeZezn3TrAsWxn2lEzFUPNEhBRmpAcNc6Ocf1e-8gr5O7P" target="_blank" rel="noopener">Bli med i Signalgruppen Robuste venner</a></li>
+        <li><a href="https://www.linkedin.com/company/foreningen-robust/?viewAsMember=true" target="_blank" rel="noopener">Følg oss på LinkedIn</a></li>
+      </ul>
+    </div>
+      <span class="footer-copy">© 2026 Foreningen Robust</span>
     </div>
   </footer>
 
