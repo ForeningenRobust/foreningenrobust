@@ -281,13 +281,14 @@ nav {
 
 /* ── CTA ──────────────────────────────────────────── */
 .cta {
-  text-align: center;
+  text-align: left;
 }
 
 .cta-lead {
   font-family: Georgia, serif;
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: clamp(1.6rem, 2.6vw, 2.6rem);
+  font-weight: 500;
+  line-height: 1.35;
   color: var(--text);
   margin-bottom: 1.5rem;
 }
@@ -295,7 +296,7 @@ nav {
 .cta-buttons {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
