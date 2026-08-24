@@ -101,7 +101,7 @@ nav {
 .hero-inner {
   display: grid;
   grid-template-columns: 42vw 1fr;
-  gap: 0;
+  gap: 4rem;
   align-items: center;
   padding-left: 3rem;
   padding-right: 3rem;
@@ -110,6 +110,7 @@ nav {
 .hero-text {
   padding-left: 3rem;
   padding-top: 1rem;
+  max-width: 560px;
 }
 
 .hero-text h1 {
