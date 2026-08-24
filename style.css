@@ -796,7 +796,7 @@ footer {
     display: none;
   }
 
-  .logo-white {
+  .nav-logo .logo-white {
     display: block;
     mix-blend-mode: normal;
   }
