@@ -100,15 +100,15 @@ nav {
 
 .hero-inner {
   display: grid;
-  grid-template-columns: 1fr 42vw;
+  grid-template-columns: 42vw 1fr;
   gap: 0;
-  align-items: start;
+  align-items: center;
   padding-left: 3rem;
   padding-right: 3rem;
 }
 
 .hero-text {
-  padding-right: 3rem;
+  padding-left: 3rem;
   padding-top: 1rem;
 }
 
@@ -128,13 +128,35 @@ nav {
   min-width: 260px;
 }
 
-.hero-images img {
+.hero-img-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.hero-img-wrap img {
   width: 100%;
   height: auto;
   min-width: 0;
   border-radius: 0;
   display: block;
   object-fit: contain;
+}
+
+.hero-img-caption {
+  position: fixed;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.8rem;
+  max-width: 260px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  z-index: 200;
 }
 
 .hero-caption {
@@ -720,6 +742,14 @@ footer {
 
   .hero-images {
     flex-direction: column;
+    margin-left: -3rem;
+    margin-right: -3rem;
+  }
+
+  .hero-img-wrap,
+  .hero-img-wrap img {
+    width: 100%;
+    display: block;
   }
 }
 

@@ -28,12 +28,14 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero-inner">
-        <div class="hero-text">
-          <h1>Vi tror at et økonomisk system som opererer innenfor naturens tålegrenser er mulig og at det er avgjørende for å sikre gode liv for alt og alle levende.</h1>
-        </div>
         <div class="hero-images">
-          <img src="sneglehus.webp" alt="Middelaldermaleri av sneglehus">
-          <p class="hero-caption">Sneglehuset er perfekt konstruert for at sneglen skal kunne bære det selv. Til inspirasjon for menneskeheten har det blitt selve symbolet på nedvekst. (Snail Homes, Robert Testard, Les secretz de l'histoire naturelle, ca. 1485)</p>
+          <div class="hero-img-wrap">
+            <img src="mask.png" alt="Middelaldermaleri av sneglehus">
+            <div class="hero-img-caption">Sneglehuset er perfekt konstruert for at sneglen skal kunne bære det selv. Til inspirasjon for menneskeheten har det blitt selve symbolet på nedvekst. (Snail Homes, Robert Testard, Les secretz de l'histoire naturelle, ca. 1485)</div>
+          </div>
+        </div>
+        <div class="hero-text">
+          <h1>Vi vet at et økonomisk system som opererer innenfor naturens tålegrenser er mulig, og at det er avgjørende for å sikre gode liv for alt levende.</h1>
         </div>
       </div>
     </section>
@@ -99,5 +101,21 @@
     </div>
   </footer>
 
+<script>
+  const wrap = document.querySelector('.hero-img-wrap');
+  const caption = document.querySelector('.hero-img-caption');
+
+  wrap.addEventListener('mouseenter', () => caption.style.opacity = '1');
+  wrap.addEventListener('mouseleave', () => caption.style.opacity = '0');
+  wrap.addEventListener('mousemove', (e) => {
+    const offset = 16;
+    let x = e.clientX + offset;
+    let y = e.clientY + offset;
+    if (x + 260 > window.innerWidth) x = e.clientX - 260 - offset;
+    if (y + caption.offsetHeight > window.innerHeight) y = e.clientY - caption.offsetHeight - offset;
+    caption.style.left = x + 'px';
+    caption.style.top = y + 'px';
+  });
+</script>
 </body>
 </html>
