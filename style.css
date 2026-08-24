@@ -755,7 +755,11 @@ footer {
   }
 
   .hero {
-    padding-top: 5px;
+    padding-top: 30px;
+  }
+
+  .hero-inner {
+    gap: 30px;
   }
 
   .hero-text {
