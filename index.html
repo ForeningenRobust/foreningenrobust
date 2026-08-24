@@ -122,25 +122,25 @@
   });
 
   wrap.addEventListener('touchstart', (e) => {
-    if (caption.style.opacity === '1') {
-      caption.style.opacity = '0';
-    } else {
-      const touch = e.touches[0];
-      const offset = 16;
-      const boxW = caption.offsetWidth;
-      const boxH = caption.offsetHeight;
-      let x = touch.clientX + offset;
-      let y = touch.clientY + offset;
-      if (x + boxW > window.innerWidth) x = touch.clientX - boxW - offset;
-      if (y + boxH > window.innerHeight) y = touch.clientY - boxH - offset;
-      if (x < 5) x = 5;
-      if (y < 5) y = 5;
-      caption.style.left = x + 'px';
-      caption.style.top = y + 'px';
-      caption.style.opacity = '1';
-    }
-    e.preventDefault();
-  }, { passive: false });
+    const touch = e.touches[0];
+    const offset = 16;
+    const boxW = caption.offsetWidth;
+    const boxH = caption.offsetHeight;
+    let x = touch.clientX + offset;
+    let y = touch.clientY + offset;
+    if (x + boxW > window.innerWidth) x = touch.clientX - boxW - offset;
+    if (y + boxH > window.innerHeight) y = touch.clientY - boxH - offset;
+    if (x < 5) x = 5;
+    if (y < 5) y = 5;
+    caption.style.left = x + 'px';
+    caption.style.top = y + 'px';
+    caption.style.opacity = '1';
+    e.stopPropagation();
+  }, { passive: true });
+
+  document.addEventListener('touchstart', () => {
+    caption.style.opacity = '0';
+  }, { passive: true });
 </script>
 </body>
 </html>
