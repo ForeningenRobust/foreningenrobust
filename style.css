@@ -55,6 +55,14 @@ nav {
   mix-blend-mode: multiply;
 }
 
+.logo-white {
+  display: none;
+}
+
+.footer-logo .logo-white {
+  display: none;
+}
+
 .nav-links {
   display: flex;
   gap: 2.5rem;
@@ -149,7 +157,7 @@ nav {
   background-color: var(--bg);
   border: 1px solid var(--border);
   padding: 0.6rem 0.8rem;
-  max-width: 260px;
+  max-width: min(260px, calc(100vw - 20px));
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 1.4;
@@ -741,10 +749,20 @@ footer {
     gap: 2rem;
   }
 
+  .hero-inner {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .hero-text {
+    padding-left: 0;
+    max-width: 100%;
+  }
+
   .hero-images {
     flex-direction: column;
-    margin-left: -3rem;
-    margin-right: -3rem;
+    margin-left: calc(-1.5rem + 5px);
+    margin-right: calc(-1.5rem + 5px);
   }
 
   .hero-img-wrap,
@@ -770,6 +788,21 @@ footer {
   nav {
     padding: 1rem 1.5rem;
     flex-wrap: wrap;
+    background-color: var(--red);
+    border-bottom: none;
+  }
+
+  .logo-red {
+    display: none;
+  }
+
+  .logo-white {
+    display: block;
+    mix-blend-mode: normal;
+  }
+
+  .nav-burger span {
+    background-color: white;
   }
 
   .nav-burger {
