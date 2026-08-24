@@ -877,4 +877,10 @@ footer {
     text-align: left;
     align-items: flex-start;
   }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
