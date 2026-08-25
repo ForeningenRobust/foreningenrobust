@@ -731,12 +731,10 @@ footer {
   padding: 4px;
 }
 
-.nav-burger span {
+.nav-burger img {
+  height: 32px;
+  width: auto;
   display: block;
-  width: 24px;
-  height: 2px;
-  background-color: var(--text);
-  transition: all 0.2s;
 }
 
 /* ── RESPONSIVE ───────────────────────────────────── */
@@ -808,10 +806,7 @@ footer {
   .nav-logo .logo-white {
     display: block;
     mix-blend-mode: normal;
-  }
-
-  .nav-burger span {
-    background-color: white;
+    height: 51px;
   }
 
   .nav-burger {
