@@ -829,6 +829,13 @@ footer {
     color: white;
   }
 
+  .nav-links li a:hover,
+  .nav-links li a:active,
+  .nav-links li a.active {
+    color: white;
+    opacity: 0.75;
+  }
+
 
   nav.nav-open .nav-links {
     display: flex;
