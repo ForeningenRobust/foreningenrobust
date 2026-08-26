@@ -731,7 +731,7 @@ footer {
   gap: 5px;
   background: none;
   border: none;
-  cursor: pointer;
+  cursor: default;
   padding: 4px;
 }
 
@@ -803,6 +803,10 @@ footer {
 
   .nav-logo .logo-white {
     height: 51px;
+  }
+
+  .nav-burger {
+    cursor: pointer;
   }
 
   .nav-links {
