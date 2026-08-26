@@ -41,22 +41,25 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 1.25rem 3rem;
   position: sticky;
   top: 0;
-  background-color: var(--bg);
+  background-color: var(--red);
   z-index: 100;
-  border-bottom: 1px solid var(--border);
 }
 
 .nav-logo img {
   height: 64px;
   width: auto;
-  mix-blend-mode: multiply;
+}
+
+.logo-red {
+  display: none;
 }
 
 .logo-white {
-  display: none;
+  display: block;
 }
 
 .footer-logo .logo-white {
@@ -64,24 +67,40 @@ nav {
 }
 
 .nav-links {
-  display: flex;
-  gap: 2.5rem;
+  display: none;
+  flex-direction: column;
   list-style: none;
+  width: 100%;
+  gap: 0;
+  padding: 0.5rem 0;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: var(--text);
+  color: white;
   font-family: var(--font-mono);
   font-size: 0.78rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  transition: color 0.2s;
+  transition: opacity 0.2s;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-  color: var(--red);
+.nav-links li a {
+  display: block;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  color: white;
+}
+
+.nav-links li a:hover,
+.nav-links li a:active,
+.nav-links li a.active {
+  color: white;
+  opacity: 0.75;
+}
+
+nav.nav-open .nav-links {
+  display: flex;
 }
 
 /* ── CONTAINER ────────────────────────────────────── */
@@ -722,7 +741,7 @@ footer {
 
 /* ── BURGER MENU ──────────────────────────────────── */
 .nav-burger {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 5px;
   background: none;
@@ -795,55 +814,10 @@ footer {
 
   nav {
     padding: 1rem 1.5rem;
-    flex-wrap: wrap;
-    background-color: var(--red);
-    border-bottom: none;
-  }
-
-  .logo-red {
-    display: none;
   }
 
   .nav-logo .logo-white {
-    display: block;
-    mix-blend-mode: normal;
     height: 51px;
-  }
-
-  .nav-burger {
-    display: flex;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    color: white;
-    width: 100%;
-    gap: 0;
-    padding: 0.5rem 0;
-  }
-
-  .nav-links li a {
-    display: block;
-    padding: 0.75rem 0;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
-    color: white;
-  }
-
-  .nav-links li a:hover,
-  .nav-links li a:active,
-  .nav-links li a.active {
-    color: white;
-    opacity: 0.75;
-  }
-
-
-  nav.nav-open .nav-links {
-    display: flex;
-  }
-
-  nav.nav-open {
-    border-bottom: none;
   }
 
   .container {
