@@ -740,6 +740,10 @@ footer {
   filter: brightness(0) invert(1);
 }
 
+.burger-mobile {
+  display: none;
+}
+
 /* ── RESPONSIVE ───────────────────────────────────── */
 @media (max-width: 900px) {
   .hero-inner,
@@ -805,6 +809,14 @@ footer {
 
   .nav-burger {
     cursor: pointer;
+  }
+
+  .burger-desktop {
+    display: none;
+  }
+
+  .burger-mobile {
+    display: block;
   }
 
   .nav-links {
