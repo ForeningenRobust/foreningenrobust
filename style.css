@@ -740,7 +740,7 @@ footer {
   filter: brightness(0) invert(1);
 }
 
-.burger-mobile {
+.nav-burger img.burger-mobile {
   display: none;
 }
 
@@ -811,11 +811,11 @@ footer {
     cursor: pointer;
   }
 
-  .burger-desktop {
+  .nav-burger img.burger-desktop {
     display: none;
   }
 
-  .burger-mobile {
+  .nav-burger img.burger-mobile {
     display: block;
   }
 
