@@ -10,8 +10,7 @@
   --text: #3F0000;
   --text-muted: #3F0000;
   --border: rgba(232, 64, 42, 0.2);
-  --font-body: Arial, Helvetica, sans-serif;
-  --font-mono: monospace;
+  --font: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -22,7 +21,7 @@ html {
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: var(--font-body);
+  font-family: var(--font);
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
@@ -74,7 +73,7 @@ nav {
 .nav-links a {
   text-decoration: none;
   color: white;
-  font-family: var(--font-mono);
+  font-family: monospace;
   font-size: 0.78rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -189,7 +188,7 @@ nav {
   justify-content: center;
   gap: 0.5rem;
   color: var(--red);
-  font-family: var(--font-mono);
+  font-family: monospace;
   font-size: 0.72rem;
   letter-spacing: 0.05em;
   opacity: 0.7;
@@ -204,7 +203,7 @@ nav {
 }
 
 .section-label {
-  font-family: var(--font-mono);
+  font-family: monospace;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -229,7 +228,7 @@ nav {
 }
 
 .member-list li {
-  font-family: var(--font-mono);
+  font-family: monospace;
   font-size: 0.82rem;
   padding: 0.5rem 0;
   border-bottom: 1px solid var(--border);
@@ -253,7 +252,7 @@ nav {
 }
 
 .partner-logo {
-  font-family: var(--font-mono);
+  font-family: monospace;
   font-size: 0.88rem;
   font-weight: 500;
   color: var(--text-muted);
@@ -305,7 +304,7 @@ nav {
 .btn {
   display: inline-block;
   padding: 0.8rem 2rem;
-  font-family: var(--font-mono);
+  font-family: monospace;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -353,7 +352,7 @@ nav {
 }
 
 .article-byline {
-  font-family: var(--font-mono);
+  font-family: monospace;
   font-size: 16px;
   color: var(--red);
   margin-top: 0.75rem;
@@ -430,7 +429,7 @@ nav {
 }
 
 .team-member-name {
-  font-family: var(--font-mono);
+  font-family: monospace;
   font-size: 28px;
   font-weight: 700;
   color: var(--text);
@@ -524,7 +523,7 @@ nav {
 }
 
 .project-card-label {
-  font-family: var(--font-mono);
+  font-family: monospace;
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -570,7 +569,7 @@ nav {
 
 .contact-email-link {
   display: inline-block;
-  font-family: var(--font-mono);
+  font-family: monospace;
   font-size: 1.25rem;
   color: var(--red);
   text-decoration: none;
@@ -616,7 +615,7 @@ nav {
 }
 
 .pub-card-author {
-  font-family: var(--font-mono);
+  font-family: var(--font);
   font-size: 0.78rem;
   color: var(--text);
 }
@@ -629,7 +628,7 @@ nav {
 }
 
 .pub-card-link {
-  font-family: var(--font-mono);
+  font-family: monospace;
   font-size: 0.78rem;
   color: var(--red);
   letter-spacing: 0.05em;
@@ -699,7 +698,7 @@ footer {
 }
 
 .footer-links a {
-  font-family: var(--font-mono);
+  font-family: monospace;
   font-size: 0.9rem;
   letter-spacing: 0.06em;
   color: white;
@@ -713,7 +712,7 @@ footer {
 }
 
 .footer-copy {
-  font-family: var(--font-mono);
+  font-family: monospace;
   font-size: 0.72rem;
   letter-spacing: 0.06em;
   opacity: 0.75;
