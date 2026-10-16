@@ -609,7 +609,7 @@ nav {
 .pub-card-title {
   font-family: Georgia, serif;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--text);
   line-height: 1.4;
 }
